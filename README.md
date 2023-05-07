@@ -7,3 +7,8 @@ Features
 - Synchronize Player position, nametag, and peer_id tag using MultiplayerSynchronizer
 - Send and receive chat messages
 - Call a function on a specific player character (ex. Bobby is kissing Lenny)
+
+Controls:
+- WASD to move
+- Enter to send text chat
+- Left-Mouse to kiss players you click on
