@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdode1cf06an3"]
+[gd_scene load_steps=7 format=3 uid="uid://cdode1cf06an3"]
 
 [ext_resource type="Script" path="res://scenes/game_world_root.gd" id="1_0ue7g"]
 [ext_resource type="PackedScene" uid="uid://ba8vmc2i6krq6" path="res://scenes/main_menu.tscn" id="2_lfbnc"]
 [ext_resource type="PackedScene" uid="uid://cqgbe7bea1eyy" path="res://scenes/chat_ui.tscn" id="3_6rr2w"]
 [ext_resource type="PackedScene" uid="uid://28r1em04x8c4" path="res://scenes/level_1.tscn" id="3_d618y"]
 [ext_resource type="PackedScene" uid="uid://c3cr5ho8f27r" path="res://scenes/log_display.tscn" id="4_x62q6"]
+[ext_resource type="PackedScene" uid="uid://stxyb5nqlddg" path="res://scenes/mouse_selection_area.tscn" id="6_hkdcl"]
 
 [node name="GameWorldRoot" type="Node"]
 script = ExtResource("1_0ue7g")
@@ -22,3 +23,5 @@ spawn_path = NodePath("..")
 [node name="MainMenu" parent="CanvasLayer" instance=ExtResource("2_lfbnc")]
 
 [node name="Level1" parent="." instance=ExtResource("3_d618y")]
+
+[node name="MouseSelectionArea" parent="." instance=ExtResource("6_hkdcl")]

@@ -1,12 +1,16 @@
 extends Node
+class_name GlobalWorldRoot
 
 # Multiplayer Settings
 const PORT = 25026
 const Player = preload("res://scenes/player_character.tscn")
 
 # Components
-@onready var main_menu = $CanvasLayer/MainMenu
-@onready var log_display = $CanvasLayer/LogDisplay
+@onready var main_menu: MainMenu = $CanvasLayer/MainMenu
+@onready var log_display: LogDisplay = $CanvasLayer/LogDisplay
+@onready var chat_ui: ChatUI = $CanvasLayer/ChatUI
+
+const quick_quit_game: bool = false
 
 func _ready():
 	main_menu.host_button.pressed.connect(on_host_button_pressed)
@@ -86,7 +90,8 @@ func remove_player_character(peer_id):
 	if player_character:
 		player_character.queue_free()
 
-func _unhandled_input(_event):
-	# Quit game when escape is pressed
-	if Input.is_action_pressed("escape"):
-		get_tree().quit()
+func _input(_event):
+	if quick_quit_game:
+		# Quit game when escape is pressed
+		if Input.is_action_pressed("escape"):
+			get_tree().quit()

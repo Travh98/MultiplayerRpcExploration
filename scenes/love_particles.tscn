@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://wuwhsw6f0g03"]
+
+[ext_resource type="Texture2D" uid="uid://dhhgk6kq1dvdy" path="res://assets/lilheart.png" id="1_bvfum"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u7anl"]
+particle_flag_disable_z = true
+spread = 180.0
+gravity = Vector3(0, 98, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+
+[node name="LoveParticles" type="GPUParticles2D"]
+emitting = false
+process_material = SubResource("ParticleProcessMaterial_u7anl")
+texture = ExtResource("1_bvfum")
+one_shot = true
+preprocess = 0.25
+explosiveness = 1.0

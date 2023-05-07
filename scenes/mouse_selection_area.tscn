@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://stxyb5nqlddg"]
+
+[ext_resource type="Script" path="res://scenes/mouse_selection_area.gd" id="1_1bsbp"]
+[ext_resource type="Texture2D" uid="uid://s200pstr8hkb" path="res://icon.svg" id="1_suhs5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xcp7"]
+
+[node name="MouseSelectionArea" type="Area2D"]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_1bsbp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_0xcp7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.109375, 0.109375)
+texture = ExtResource("1_suhs5")

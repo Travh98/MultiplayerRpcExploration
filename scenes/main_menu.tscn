@@ -37,6 +37,11 @@ layout_mode = 2
 placeholder_text = "IP ADDRESS"
 alignment = 1
 
+[node name="NameEntry" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "PLAYER NAME"
+alignment = 1
+
 [node name="JoinButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "JOIN"
