@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf3wev3r4avxo"]
+
+[ext_resource type="Texture2D" uid="uid://c1kebp6lee26" path="res://assets/liltree.png" id="1_1nlse"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ahfyu"]
+radius = 6.04669
+
+[node name="LittleTree" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_1nlse")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_ahfyu")

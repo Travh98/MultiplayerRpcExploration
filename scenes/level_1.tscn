@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://28r1em04x8c4"]
+
+[ext_resource type="PackedScene" uid="uid://bf3wev3r4avxo" path="res://scenes/little_tree.tscn" id="1_xurxl"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Trees" type="Node2D" parent="."]
+
+[node name="LittleTree" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(89, 64)
+
+[node name="LittleTree2" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(142, -75)
+
+[node name="LittleTree3" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(-5, -159)
+
+[node name="LittleTree4" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(-151, -67)
+
+[node name="LittleTree5" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(-96, 79)
+
+[node name="LittleTree6" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(31, 252)
+
+[node name="LittleTree7" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(129, 255)
+
+[node name="LittleTree8" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(256, 251)
+
+[node name="LittleTree9" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(202, 373)
+
+[node name="LittleTree10" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(75, 372)
+
+[node name="LittleTree11" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(345, 333)
+
+[node name="LittleTree12" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(400, 188)
+
+[node name="LittleTree13" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(327, -209)
+
+[node name="LittleTree14" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(-143, -322)
+
+[node name="LittleTree15" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(-487, -30)
+
+[node name="LittleTree16" parent="Trees" instance=ExtResource("1_xurxl")]
+position = Vector2(-206, 314)
