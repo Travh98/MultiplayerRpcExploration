@@ -17,6 +17,7 @@ spawn_path = NodePath("..")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="LogDisplay" parent="CanvasLayer" instance=ExtResource("4_x62q6")]
+visible = false
 
 [node name="ChatUI" parent="CanvasLayer" instance=ExtResource("3_6rr2w")]
 

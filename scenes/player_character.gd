@@ -56,6 +56,6 @@ func unfreeze_character_controls():
 @rpc("call_local", "any_peer", "reliable")
 func get_kissed():
 	if multiplayer.get_remote_sender_id() == get_multiplayer_authority():
-		return # you cant kiss urself
+		return # you cant kiss yourself silly
 	$LoveParticles.restart()
 	$LoveParticles.emitting = true

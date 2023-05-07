@@ -7,11 +7,8 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("mouse_select"):
 		for body in get_overlapping_bodies():
-			print("Clicked on body: ", body)
+#			print("Clicked on body: ", body)
 			if body is PlayerCharacter:
 				var player_character: PlayerCharacter = body
-				# If this is the player we are controlling, you can't kiss yourself
-#				if player_character.get_multiplayer_authority() == get_multiplayer_authority():
-#					return
-				# Give the other player a smooch
+				# Try kissing the player we found
 				player_character.get_kissed.rpc()
