@@ -43,6 +43,7 @@ func setup_network(is_host: bool):
 		print("Joining as client to ", join_address)
 		enet_peer.create_client(join_address, PORT)
 	multiplayer.multiplayer_peer = enet_peer
+	log_display.add_log("My multiplayer ID: " + str(multiplayer.get_unique_id()))
 
 func upnp_setup():
 	var upnp = UPNP.new()
@@ -68,7 +69,7 @@ func on_peer_disconnected(peer_id: int):
 	remove_player_character(peer_id)
 
 func add_player_character(peer_id):
-	log_display.add_log("Creating player character for peer: %s" % str(peer_id))
+	log_display.add_log("Host is creating player character for peer: %s" % str(peer_id))
 	
 	# Spawn a new character for this player to control
 	var player_character = Player.instantiate()

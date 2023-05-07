@@ -15,6 +15,7 @@ properties/1/sync = true
 radius = 7.0
 
 [node name="PlayerCharacter" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_x22si")
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
